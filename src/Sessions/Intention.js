@@ -5,7 +5,7 @@ export default function Intention() {
         <div className="md:w-1/2 grid grid-cols-2 gap-4">
           <div className="p-8 bg-primary rounded-2xl text-white shadow-xl shadow-red-100">
             <span className="material-symbols-outlined text-4xl mb-4">
-              handshake
+             <i className="fa-solid fa-handshake"></i>
             </span>
             <h4 className="font-bold text-xl mb-2">Direct Sourcing</h4>
             <p className="text-sm opacity-90">
@@ -15,7 +15,7 @@ export default function Intention() {
 
           <div className="p-8 bg-gray-50 rounded-2xl mt-8 border border-gray-100">
             <span className="material-symbols-outlined text-primary text-4xl mb-4">
-              health_and_safety
+          <i className="fa-solid fa-briefcase-medical"></i>
             </span>
             <h4 className="font-bold text-xl mb-2 text-text-dark">
               Health First
@@ -28,7 +28,7 @@ export default function Intention() {
 
         <div className="md:w-1/2 text-right">
           <h2 className="text-4xl md:text-5xl font-black mb-6 text-text-dark">
-            CRF Intention
+            CRF_Intention
           </h2>
           <div className="w-24 h-2 bg-primary ml-auto mb-8" />
           <p className="text-lg text-text-gray leading-relaxed">

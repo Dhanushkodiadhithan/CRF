@@ -23,7 +23,7 @@ export default function Hero() {
 
           <div className="flex gap-4">
             <button className="bg-primary text-white px-8 py-4 rounded-lg font-bold hover:bg-red-700 shadow-lg shadow-red-200 flex items-center gap-2">
-              <span className="material-symbols-outlined">shopping_cart</span>
+              <span className="material-symbols-outlined"><i className="fa-solid fa-cart-shopping"></i></span>
               Buy Now
             </button>
 
@@ -37,7 +37,7 @@ export default function Hero() {
           <div className="bg-white p-12 rounded-2xl border border-gray-100 shadow-xl rotate-3 hover:rotate-0 transition">
             <div className="size-48 bg-primary/5 rounded-full flex items-center justify-center">
               <span className="material-symbols-outlined text-primary text-8xl">
-                eco
+                <i className="fa-solid fa-leaf"></i>
               </span>
             </div>
             <div className="mt-8 text-center">

@@ -18,7 +18,7 @@ export default function Products() {
             className="text-primary font-bold flex items-center gap-2 hover:underline"
           >
             View Catalog{" "}
-            <span className="material-symbols-outlined">arrow_forward</span>
+            <span className="material-symbols-outlined"><i className="fa-solid fa-arrow-right"></i></span>
           </a>
         </div>
 

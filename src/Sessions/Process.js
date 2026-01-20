@@ -16,7 +16,7 @@ export default function Process() {
         />
         <div className="relative z-10 size-24 bg-primary rounded-full flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform">
           <span className="material-symbols-outlined text-white text-5xl translate-x-1">
-            play_arrow
+            <i className="fa-solid fa-play"></i>
           </span>
         </div>
         <p className="absolute bottom-8 left-8 text-white font-bold text-xl">
@@ -77,8 +77,7 @@ export default function Process() {
         <div className="bg-gray-50 rounded-2xl p-6 border border-gray-100">
           <h4 className="font-bold text-lg mb-4 flex items-center gap-2 text-text-dark">
             <span className="material-symbols-outlined text-primary">
-              slow_motion_video
-            </span>
+<i className="fa-solid fa-compact-disc"></i>            </span>
             Product Guides
           </h4>
 
@@ -100,7 +99,7 @@ export default function Process() {
                   </p>
                 </div>
                 <span className="material-symbols-outlined text-gray-400 group-hover:text-primary">
-                  play_circle
+                  <i className="fa-solid fa-circle-play"></i>
                 </span>
               </div>
             ))}

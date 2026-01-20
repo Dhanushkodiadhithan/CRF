@@ -22,7 +22,7 @@ export default function Reviews() {
                 <div className="absolute inset-0 bg-gray-400 opacity-60" />
                 <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition bg-black/20">
                   <span className="material-symbols-outlined text-5xl">
-                    play_circle
+                    <i className="fa-solid fa-circle-play"></i>
                   </span>
                 </div>
                 <p className="absolute bottom-4 left-4 text-xs font-bold bg-primary px-2 py-1 rounded">
@@ -62,7 +62,7 @@ export default function Reviews() {
                     key={j}
                     className="material-symbols-outlined fill-1"
                   >
-                    star
+                    <i className="fa-solid fa-star"></i>
                   </span>
                 ))}
               </div>
@@ -77,7 +77,7 @@ export default function Reviews() {
 
         <div className="text-center">
           <button className="bg-white text-primary px-10 py-4 rounded-xl font-black hover:scale-105 transition flex items-center gap-2 mx-auto shadow-2xl">
-            <span className="material-symbols-outlined">rate_review</span>
+            <span className="material-symbols-outlined"><i className="fa-solid fa-sheet-plastic"></i></span>
             GIVE A REVIEW
           </button>
         </div>

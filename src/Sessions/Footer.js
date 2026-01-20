@@ -1,4 +1,10 @@
 export default function Footer() {
+    const icons = [
+    { id: "share", class: "fa-share-nodes" },
+    { id: "web", class: "fa-earth-americas" },
+    { id: "mail", class: "fa-envelope" }
+  ];
+
   return (
     <footer id="contact" className="bg-white border-t border-gray-100 pt-24 pb-12">
       <div className="max-w-7xl mx-auto px-6">
@@ -20,19 +26,27 @@ export default function Footer() {
               Cuddalore Raw Foods is dedicated to delivering the finest natural
               produce. We believe in transparency, sustainability, and health.
             </p>
-
             <div className="flex gap-4">
-              {["share", "public", "mail"].map((icon) => (
-                <a
-                  key={icon}
-                  href="#"
-                  className="size-10 rounded-full bg-gray-50 flex items-center justify-center hover:bg-primary hover:text-white transition-all text-text-dark"
-                >
-                  <span className="material-symbols-outlined text-xl">
-                    {icon}
-                  </span>
-                </a>
-              ))}
+
+
+
+
+ {icons.map((item) => (
+        <a
+          key={item.id}
+          href="#"
+          className="size-10 rounded-full bg-gray-50 flex items-center justify-center hover:bg-primary hover:text-white transition-all text-text-dark"
+        >
+          <span className="text-xl">
+            <i className={`fa-solid ${item.class}`}></i>
+          </span>
+        </a>
+      ))}
+
+
+
+
+
             </div>
           </div>
 
@@ -44,10 +58,10 @@ export default function Footer() {
 
             <ul className="flex flex-col gap-6">
               {[
-                ["mail", "hello@cuddalorerawfoods.com"],
-                ["call", "+91 98765 43210"],
-                ["location_on", "Harbour Road, Cuddalore, TN"],
-              ].map(([icon, text], i) => (
+                [1,<i className="fa-solid fa-envelope"></i>, "hello@cuddalorerawfoods.com"],
+                [2,<i className="fa-solid fa-phone"></i>, "+91 98765 43210"],
+                [3,<i className="fa-solid fa-location-dot"></i>, "Harbour Road, Cuddalore, TN"],
+              ].map(([index,icon, text], i) => (
                 <li key={i} className="flex gap-4 items-center">
                   <span className="material-symbols-outlined text-primary">
                     {icon}
@@ -67,9 +81,6 @@ export default function Footer() {
             <div className="grid grid-cols-2 gap-4">
               {[
                 ["Cuddalore Main", "Harbour Side"],
-                ["Chennai Hub", "Adyar Central"],
-                ["Pondicherry", "White Town"],
-                ["Bangalore", "Indiranagar"],
               ].map(([city, area], i) => (
                 <div
                   key={i}
